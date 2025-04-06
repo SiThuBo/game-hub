@@ -13,7 +13,7 @@ const Emoji = ({ rating }: Props) => {
     4: { src: thumbsUp, alt: "thumbsUp", boxSize: "25px" },
     5: { src: bullEye, alt: "bullEye", boxSize: "35px" },
   };
-  if (rating < 3) return "";
+  if (rating < 3) return null;
   return <Image {...Emojimap[rating]} marginTop={1} />;
 };
 
